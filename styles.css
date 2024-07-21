@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #160d0d;
+    color: #faf7f7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #810808;
+}
+
+.logo h1 {
+    text-align: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #032809;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('images/WhatsApp Image 2024-07-20 at 1.26.27 PM.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(21, 21, 21);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #810808;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.card img {
+    width: 90%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+.card p {
+    color: #faf7f7;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    color: #ffecec;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #700a0a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #ecd9d9;
+}
+
+.menu-section, .about-section {
+    margin-bottom: 40px;
+}
+
+.menu-section h2, .about-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffecec;
+    border-bottom: 2px solid #ffecec;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-section ul, .about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section ul li, .about-section ul li {
+    background-color: #810808;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-section ul li:hover {
+    background-color: #700a0a;
+}
+
+.menu-item-name {
+    font-weight: bold;
+    color: #ecd9d9;
+}
+
+.menu-item-price {
+    color: #ffecec;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #ffecec;
+    margin-bottom: 40px;
+}
+
+.reservations {
+    background-color: #1b1919;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reservations h2 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.reservations p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.reservations form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservations label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.reservations input,
+.reservations textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.reservations input[type="date"],
+.reservations input[type="time"],
+.reservations input[type="number"] {
+    padding-right: 30px;
+}
+
+.reservations button {
+    background-color: #770f0f;
+    color: #f5eded;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservations button:hover {
+    background-color: #ff9900;
+}
+
+@media (max-width: 768px) {
+    .reservations form {
+        padding: 20px;
+    }
+
+    .reservations input,
+    .reservations textarea {
+        font-size: 14px;
+    }
+
+    .reservations button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
